@@ -265,7 +265,7 @@ class Client
      */
     private function getConsumerKey()
     {
-        return $this->config['consumer_key'];
+        return $this->config['consumer_key'] ?? null;
     }
 
     /**
@@ -273,7 +273,7 @@ class Client
      */
     private function getConsumerSecret()
     {
-        return $this->config['consumer_secret'];
+        return $this->config['consumer_secret'] ?? null;
     }
 
     /**
@@ -281,7 +281,7 @@ class Client
      */
     private function getCallback()
     {
-        return $this->config['callback'];
+        return $this->config['callback'] ?? null;
     }
 
     /**
@@ -289,7 +289,7 @@ class Client
      */
     private function getSignatureMethod()
     {
-        return $this->config['signature_method'];
+        return $this->config['signature_method'] ?? null;
     }
 
     /**
@@ -297,7 +297,7 @@ class Client
      */
     public function getAuthorizeURL()
     {
-        return $this->config['authorize_url'];
+        return $this->config['authorize_url'] ?? null;
     }
 
     //Populated during 3-legged auth
